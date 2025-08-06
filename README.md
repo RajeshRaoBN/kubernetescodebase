@@ -10,3 +10,7 @@ dXNlcm5hbWU=
 cGFzc3dvcmQ=
 
 This can be used in secret file
+
+to start multiple nodes use the following command
+
+> minikube start --nodes=2
