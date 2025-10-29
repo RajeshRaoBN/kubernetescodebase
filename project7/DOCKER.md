@@ -36,3 +36,14 @@ NOTE: You cant remove a running container. You need to stop it before removing o
 
 > docker build --tag mywebsite:latest .     # This is to build an image in the current directory
 
+> docker tag mywebsite:latest rbnrao/mainwebsite:1 # Attaching tags to a new image
+
+> docker push rbnrao/mainwebsite:1     # To push to docker repo
+
+> docker pull rbnrao/mainwebsite:1
+
+> docker describe containerID    # To describe a container
+
+> docker logs containerID    # To see logs of the container
+
+> docker inspect containerID.    # To inspect the container

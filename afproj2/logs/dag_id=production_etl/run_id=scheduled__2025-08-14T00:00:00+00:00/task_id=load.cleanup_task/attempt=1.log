@@ -1,0 +1,15 @@
+{"timestamp":"2025-08-14T03:46:42.038913","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-14T03:46:42.039613","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/production_etl.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-14T03:46:42.079700Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:46:42.080520Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:46:42.080774Z","level":"info","event":"Current task name:load.cleanup_task","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:46:42.081433Z","level":"info","event":"Dag name:production_etl","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:46:42.080694","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:46:42.081590","level":"info","event":"Running command: ['/usr/bin/bash', '-c', \"echo 'Cleaning up temporary files...'\"]","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:46:42.093092","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:46:42.095055","level":"info","event":"Cleaning up temporary files...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:46:42.095311","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:46:42.095919","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('0198a6af-ce61-78ef-b462-e141c377ea99'), task_id='load.cleanup_task', dag_id='production_etl', run_id='scheduled__2025-08-14T00:00:00+00:00', try_number=1, map_index=-1, hostname='4dcf1c469b5a', context_carrier={}, task=<Task(BashOperator): load.cleanup_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2025, 8, 14, 3, 46, 41, 563069, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/production_etl/runs/scheduled__2025-08-14T00%3A00%3A00%2B00%3A00/tasks/load.cleanup_task?try_number=1')","logger":"task"}
+{"timestamp":"2025-08-14T03:46:42.130650Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:46:42.130922Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:46:42.131238Z","level":"info","event":"Task operator:<Task(BashOperator): load.cleanup_task>","chan":"stdout","logger":"task"}

@@ -1,0 +1,15 @@
+{"timestamp":"2025-08-14T03:17:41.127896","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-14T03:17:41.128376","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/branching_dynamic_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-14T03:17:41.170958Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:17:41.171296Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:17:41.171582Z","level":"info","event":"Current task name:weekday_task","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:17:41.171954Z","level":"info","event":"Dag name:branching_dynamic_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:17:41.171888","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:17:41.173115","level":"info","event":"Running command: ['/usr/bin/bash', '-c', \"echo 'It’s a weekday! Time to work.'\"]","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:17:41.185037","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:17:41.187050","level":"info","event":"It’s a weekday! Time to work.","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:17:41.187249","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:17:41.187951","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('0198a695-44bd-7cb0-8064-a6df0c8e455c'), task_id='weekday_task', dag_id='branching_dynamic_dag', run_id='manual__2025-08-14T03:17:37.056674+00:00', try_number=1, map_index=-1, hostname='4dcf1c469b5a', context_carrier={}, task=<Task(BashOperator): weekday_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 8, 14, 3, 17, 40, 639394, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/branching_dynamic_dag/runs/manual__2025-08-14T03%3A17%3A37.056674%2B00%3A00/tasks/weekday_task?try_number=1')","logger":"task"}
+{"timestamp":"2025-08-14T03:17:41.219056Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:17:41.219404Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:17:41.219780Z","level":"info","event":"Task operator:<Task(BashOperator): weekday_task>","chan":"stdout","logger":"task"}

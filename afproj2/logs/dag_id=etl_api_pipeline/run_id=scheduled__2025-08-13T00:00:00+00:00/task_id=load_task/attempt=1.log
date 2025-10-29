@@ -1,0 +1,11 @@
+{"timestamp":"2025-08-13T23:50:04.033193","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-13T23:50:04.034508","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_api_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-13T23:50:04.074402Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T23:50:04.076146Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T23:50:04.076450Z","level":"info","event":"Current task name:load_task","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T23:50:04.076691Z","level":"info","event":"Dag name:etl_api_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T23:50:04.086798Z","level":"info","event":"Data saved to /tmp/etl_output.json","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T23:50:04.087478","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-08-13T23:50:04.103259Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T23:50:04.104099Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T23:50:04.104408Z","level":"info","event":"Task operator:<Task(PythonOperator): load_task>","chan":"stdout","logger":"task"}

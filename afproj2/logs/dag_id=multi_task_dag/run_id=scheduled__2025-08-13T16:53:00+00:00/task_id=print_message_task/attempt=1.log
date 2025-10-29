@@ -1,0 +1,11 @@
+{"timestamp":"2025-08-13T16:53:18.953228","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-13T16:53:18.960111","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/multi_task_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-13T16:53:19.187781Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T16:53:19.189680Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T16:53:19.194884Z","level":"info","event":"Current task name:print_message_task","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T16:53:19.197304Z","level":"info","event":"Dag name:multi_task_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T16:53:19.314521Z","level":"info","event":"Received message: Hello from Airflow! Today's date is 2025-08-13","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T16:53:19.325125","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-08-13T16:53:19.450265Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T16:53:19.452305Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-13T16:53:19.454614Z","level":"info","event":"Task operator:<Task(PythonOperator): print_message_task>","chan":"stdout","logger":"task"}

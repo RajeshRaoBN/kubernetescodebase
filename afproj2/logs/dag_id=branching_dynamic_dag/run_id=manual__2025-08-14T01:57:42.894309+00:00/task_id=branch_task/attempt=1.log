@@ -1,0 +1,14 @@
+{"timestamp":"2025-08-14T01:57:45.885035","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-14T01:57:45.886078","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/branching_dynamic_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-14T01:57:45.989180Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T01:57:45.989519Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T01:57:45.989838Z","level":"info","event":"Current task name:branch_task","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T01:57:45.990186Z","level":"info","event":"Dag name:branching_dynamic_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T01:57:45.990750","level":"info","event":"Done. Returned value was: weekday_task","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-08-14T01:57:45.990984","level":"info","event":"Branch into weekday_task","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-08-14T01:57:45.991484","level":"info","event":"Following branch {'weekday_task'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-08-14T01:57:45.992129","level":"info","event":"Skipping tasks [('weekend_task', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-08-14T01:57:46.015193","level":"info","event":"Skipping downstream tasks.","logger":"task"}
+{"timestamp":"2025-08-14T01:57:46.075358Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T01:57:46.075795Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T01:57:46.076295Z","level":"info","event":"Task operator:<Task(BranchPythonOperator): branch_task>","chan":"stdout","logger":"task"}

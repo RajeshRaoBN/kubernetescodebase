@@ -1,0 +1,15 @@
+{"timestamp":"2025-08-14T03:06:02.896205","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-14T03:06:02.896976","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/branching_dynamic_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-14T03:06:02.972131Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:06:02.972549Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:06:02.972950Z","level":"info","event":"Current task name:small_number_task","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:06:02.973279Z","level":"info","event":"Dag name:branching_dynamic_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:06:02.973169","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:06:02.974341","level":"info","event":"Running command: ['/usr/bin/bash', '-c', \"echo 'It’s a small number!'\"]","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:06:02.987852","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:06:02.990155","level":"info","event":"It’s a small number!","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:06:02.990530","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-08-14T03:06:02.991282","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('0198a68a-a347-7485-81f3-d889da8b4783'), task_id='small_number_task', dag_id='branching_dynamic_dag', run_id='manual__2025-08-14T03:06:00.357659+00:00', try_number=1, map_index=-1, hostname='4dcf1c469b5a', context_carrier={}, task=<Task(BashOperator): small_number_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 8, 14, 3, 6, 1, 279280, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/branching_dynamic_dag/runs/manual__2025-08-14T03%3A06%3A00.357659%2B00%3A00/tasks/small_number_task?try_number=1')","logger":"task"}
+{"timestamp":"2025-08-14T03:06:03.041578Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:06:03.041911Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-14T03:06:03.042327Z","level":"info","event":"Task operator:<Task(BashOperator): small_number_task>","chan":"stdout","logger":"task"}
